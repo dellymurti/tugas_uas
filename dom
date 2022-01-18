@@ -1,0 +1,54 @@
+<html>
+<head><title>QUIS PRA UAS</title></head>
+<body>
+
+
+<script languange ="JavaScript">
+<!--
+function tekan()
+{
+    var namastr = (document.fform.nama.value);
+    var kelaminstr = (document.fform.kelamin.value);
+    var jurusanstr = (document.fform.Jurusan.value);
+    var hobystr = (document.fform.hoby.value);
+
+    
+    document.fform.onama.value = namastr;
+    document.fform.okelamin.value = kelaminstr;
+    document.fform.Ojurusan.value = jurusanstr;
+    document.fform.ohoby.value = hobystr;
+}
+
+</script>
+<form name ="fform">
+<H3> QUIS PRA UAS</H3><hr>
+<h4>Masukan :<h4>
+
+
+Nama Anda : <input type="text" size="11" name="nama"> <br>   
+Jenis Kelamin  : <radio name="kelamin" Size="1"></radio>
+    <input type="radio" name="kelamin" value="Laki-laki" >Laki-laki
+    <input type="radio" name="kelamin" value="Perempuan" >Perempuan<br>
+
+Prodi :<select name="Jurusan" Size="1">
+ <option value ="Teknik Informatika"> Teknik Informatika </option>
+ <option value ="Sistem Informasi"> Sistem Informasi </option>
+ </select><br>
+
+Hoby: <checkbox name="hoby" size="12"></checkbox>
+    <input type="checkbox" value="on" name="hoby">Coding
+    <input type="checkbox" value="on" name="hoby">Jalan-jalan
+    <input type="checkbox" value="on" name="hoby">Makan<br>
+
+ <p><input type="button" value="kirim" onclick="tekan()">
+
+
+<H4>Output:</H4>
+Nama:<input type="text" size="12" name="onama"><br>
+Jenis Kelamin :<input type="text" size="12" name="okelamin"><br>
+Prodi:<input type="text" name="Ojurusan" size="12"><br>
+Hoby:<input type="text" name="ohoby" size="12"><br>
+
+</form>
+</body>
+</html>
